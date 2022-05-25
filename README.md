@@ -10,7 +10,7 @@ This is a case study for an Airport Ontology design. Where Customers buy tickets
 It was implemented on Protégé, A free, open-source ontology editor and framework for building intelligent systems.
 
 ## RDF Graph
-![alttext](rdf.png)
+![alttext](rdf_schema.png)
 
 
 ## Declaring Entity Constraints
@@ -24,7 +24,8 @@ It was implemented on Protégé, A free, open-source ontology editor and framewo
   * A Flight has exactly 1 Arrival Gate
   * A Flight has exactly 1 Departing Gate
   * A Flight can have a Maximum of 240 Tickets
-  * A Flight is hosted by exactly 1 Airline 
+  * A Flight is went by exactly 1 plane
+  * A Flight is owned by exactly 1 Airline 
 * Gate 
   * A Gate has minimum 5 arriving flights
   * A Gate has Minimum 5 departing flights
@@ -34,12 +35,58 @@ It was implemented on Protégé, A free, open-source ontology editor and framewo
   * An Employee works for exactly 1 Airport
 * Plane
   * A Plane is owned by exactly 1 Airline
+  * A Plane goes on multiple flights
 * Terminal
   * A Terminal exists in exactly 1 airport
   * A Terminal contains maximum 52 Gates
 * Ticket
   * A Ticket is being bought by exactly 1 Customer
   * A Ticket has exatly 1 Flight     
+
+## Data Property Constraints
+
+* aircraft_engine (Plane) is either:
+ * Turbofan
+ * Turbojet
+ * Turboprop
+ * Turboshaft
+* arriving_or_departing (Terminal) is either:
+ * Arriving
+ * Departing
+* baggage_capacity (Plane) has some value between: 0 --> 10000 kg
+* class (Ticket) is either:
+ * Economy
+ * First class
+ * Business
+* estimated_duration (Flight) has some value between: 0 --> 1130 minutes
+* facilities (Terminal) has:
+ * Dutyfree
+ * Foodcourt
+ * Shopping
+ * WC
+* gate_number (Gate) has some value between: 0 --> 52
+* gender (Person) is either:
+ * Male
+ * Female
+* international_or_national (Terminal) is either:
+ * International
+ * National
+* max_speed (Plane) has some value 0 --> 1046.07 kmph
+* number_of_seats (Plane) has some value between 0 --> 1087 
+* price (Ticket) is minimum 0
+* responsibility (Employee) is either:
+ * cleaner
+ * crew
+ * fueler
+ * mechanic engineer
+ * pilot
+ * reservation
+ * security
+* salary (Employee) has some value between 0 --> 30000 USD
+* terminal_number (Terminal) has some value between 0 --> 10
+* working_shift (Employee) is either:
+ * am
+ * pm
 ## Contributers
 * Steven Sameh [(github link)][link_steven]
 * Dona Samir [(github link)][link_dona]
