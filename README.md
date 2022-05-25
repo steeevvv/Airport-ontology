@@ -46,47 +46,47 @@ It was implemented on Protégé, A free, open-source ontology editor and framewo
 ## Data Property Constraints
 
 * aircraft_engine (Plane) is either:
- * Turbofan
- * Turbojet
- * Turboprop
- * Turboshaft
+  * Turbofan
+  * Turbojet
+  * Turboprop
+  * Turboshaft
 * arriving_or_departing (Terminal) is either:
- * Arriving
- * Departing
+  * Arriving
+  * Departing
 * baggage_capacity (Plane) has some value between: 0 --> 10000 kg
 * class (Ticket) is either:
- * Economy
- * First class
- * Business
+  * Economy
+  * First class
+  * Business
 * estimated_duration (Flight) has some value between: 0 --> 1130 minutes
 * facilities (Terminal) has:
- * Dutyfree
- * Foodcourt
- * Shopping
- * WC
+  * Dutyfree
+  * Foodcourt
+  * Shopping
+  * WC
 * gate_number (Gate) has some value between: 0 --> 52
 * gender (Person) is either:
- * Male
- * Female
+  * Male
+  * Female
 * international_or_national (Terminal) is either:
- * International
- * National
+  * International
+  * National
 * max_speed (Plane) has some value 0 --> 1046.07 kmph
 * number_of_seats (Plane) has some value between 0 --> 1087 
 * price (Ticket) is minimum 0
 * responsibility (Employee) is either:
- * cleaner
- * crew
- * fueler
- * mechanic engineer
- * pilot
- * reservation
- * security
+  * cleaner
+  * crew
+  * fueler
+  * mechanic engineer
+  * pilot
+  * reservation
+  * security
 * salary (Employee) has some value between 0 --> 30000 USD
 * terminal_number (Terminal) has some value between 0 --> 10
 * working_shift (Employee) is either:
- * am
- * pm
+  * am
+  * pm
 ## Contributers
 * Steven Sameh [(github link)][link_steven]
 * Dona Samir [(github link)][link_dona]
