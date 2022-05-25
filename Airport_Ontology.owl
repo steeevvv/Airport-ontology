@@ -739,6 +739,16 @@
         <NamedIndividual IRI="#Flight_1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#goon"/>
+        <NamedIndividual IRI="#Plane_A380"/>
+        <NamedIndividual IRI="#Flight_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#goon"/>
+        <NamedIndividual IRI="#Plane_Boeing777"/>
+        <NamedIndividual IRI="#Flight_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#contains"/>
         <NamedIndividual IRI="#Termial_1"/>
         <NamedIndividual IRI="#Gate_1"/>
@@ -1289,6 +1299,11 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">440.0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#plane_name"/>
+        <NamedIndividual IRI="#Plane_A320"/>
+        <Literal>Airbus A320</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#aircraft_engine"/>
         <NamedIndividual IRI="#Plane_A380"/>
         <Literal>Turboprop</Literal>
@@ -1307,6 +1322,11 @@
         <DataProperty IRI="#number_of_seats"/>
         <NamedIndividual IRI="#Plane_A380"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">840</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#plane_name"/>
+        <NamedIndividual IRI="#Plane_A380"/>
+        <Literal>Airbus 380</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#aircraft_engine"/>
@@ -1329,6 +1349,11 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#plane_name"/>
+        <NamedIndividual IRI="#Plane_Boeing737"/>
+        <Literal>Boeing 737</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#aircraft_engine"/>
         <NamedIndividual IRI="#Plane_Boeing777"/>
         <Literal>Turboshaft</Literal>
@@ -1347,6 +1372,11 @@
         <DataProperty IRI="#number_of_seats"/>
         <NamedIndividual IRI="#Plane_Boeing777"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">900</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#plane_name"/>
+        <NamedIndividual IRI="#Plane_Boeing777"/>
+        <Literal>Boeing 777</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#arriving_or_departing"/>
@@ -1469,14 +1499,14 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2020-10-01T11:32:52</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#price"/>
+        <DataProperty IRI="#class"/>
         <NamedIndividual IRI="#Ticket_2"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">300.0</Literal>
+        <Literal>Business</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#price"/>
         <NamedIndividual IRI="#Ticket_2"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">880.5</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">300.0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#seat_number"/>
