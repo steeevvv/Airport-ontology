@@ -1,0 +1,67 @@
+// Returns Customer Names, departing and arriving airports of each ticket booked by every customer
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+PREFIX uri: <http://www.semanticweb.org/steve/ontologies/2022/4/untitled-ontology-3#>
+SELECT ?customer_name ?airport_name ?departing_airport_name ?ticket
+	WHERE {       
+		?airport uri:consist_of ?terminal.
+		?airport uri:airport_name ?airport_name.
+		?terminal uri:contains ?arriving_gate.
+		?departing_airport uri:consist_of ?departing_terminal.
+		?departing_airport uri:airport_name ?departing_airport_name.
+		?departing_terminal uri:contains ?departing_gate.
+		?departing_gate uri:departing_gate ?flight .
+		 ?flight uri:arrival_gate ?arriving_gate.
+		?flight uri:has ?ticket .
+		?cust uri:buys ?ticket.
+		?cust uri:name ?customer_name .
+} 
+
+
+// Returns Ticket count booked for each Flight, and shows respective plane name, flight number and flight date
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX uri: <http://www.semanticweb.org/steve/ontologies/2022/4/untitled-ontology-3#>
+
+SELECT ?planename ?flightnum ?ticket_count ?flightdate
+WHERE{
+	?plane uri:goon ?flight.
+	?flight uri:flight_date ?flightdate ;
+		uri:flight_number ?flightnum.
+	?plane uri:plane_name ?planename.
+
+	 {
+		SELECT  ?flight     (COUNT(DISTINCT(?ticket)) AS?ticket_count) 
+		WHERE {
+			?flight uri:has ?ticket.
+		}
+		GROUP BY ?flight 
+	}
+}
+
+
+// Returns all customer names, ticket proces, and booked seat number for economy class tickets
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX uri: <http://www.semanticweb.org/steve/ontologies/2022/4/untitled-ontology-3#>
+
+SELECT ?customername ?ticketprice ?ticketseatnum
+WHERE{
+	?cust uri:buys ?ticket.
+	?cust uri:name ?customername.
+	?ticket uri:class ?ticketclass ;
+	             uri:seat_number ?ticketseatnum;
+	             uri:price ?ticketprice.
+	FILTER REGEX (?ticketclass,"Economy","i").
+}
+
+
+
+
