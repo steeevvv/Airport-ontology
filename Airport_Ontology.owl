@@ -1441,7 +1441,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#terminal_number"/>
         <NamedIndividual IRI="#Terminal_4"/>
-        <Literal>4</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#buy_date"/>
@@ -2162,10 +2162,6 @@
             </DataHasValue>
         </ObjectUnionOf>
     </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-        <Class IRI="#Plane"/>
-    </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="#Birthdate"/>
         <Datatype abbreviatedIRI="xsd:dateTime"/>
@@ -2288,10 +2284,6 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#working_shift"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
 </Ontology>
