@@ -44,7 +44,6 @@ It was implemented on Protégé, A free, open-source ontology editor and framewo
   * A Ticket has exatly 1 Flight     
 
 ## Data Property Constraints
-
 * aircraft_engine (Plane) is either:
   * Turbofan
   * Turbojet
@@ -87,6 +86,16 @@ It was implemented on Protégé, A free, open-source ontology editor and framewo
 * working_shift (Employee) is either:
   * am
   * pm
+
+## Sample Sparql Queries
+
+1. Returns Customer Names, departing and arriving airports of each ticket booked by every customer
+![alttext](sparql1.jpg)
+2. Returns Ticket count booked for each Flight, and shows respective plane name, flight number and flight date
+![alttext](sparql2.jpg)
+3. Returns all customer names, ticket proces, and booked seat number for economy class tickets
+![alttext](sparql3.jpg)
+
 ## Contributers
 * Steven Sameh [(github link)][link_steven]
 * Dona Samir [(github link)][link_dona]
