@@ -1,0 +1,2302 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/steve/ontologies/2022/4/untitled-ontology-3"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/steve/ontologies/2022/4/untitled-ontology-3">
+    <Prefix name="" IRI="http://www.semanticweb.org/steve/ontologies/2022/4/untitled-ontology-3"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Airline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Airport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Customer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Employee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Flight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plane"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Terminal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ticket"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#arrival_gate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#buys"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#consist_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#contains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#departing_gate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#goon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#owns"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#work_for"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Birthdate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#address"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#aircraft_engine"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#airline_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#airline_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#airport_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#arriving_or_departing"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#baggage_capaity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#buy_date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#city"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#class"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#email"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#estimated_duration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#facilities"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#flight_date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#flight_number"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#gate_number"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#gender"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#international_or_national"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#max_speed"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#number_of_seats"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#owner_country"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#personal_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#plane_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#price"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#responsibility"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#salary"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#seat_number"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#terminal_number"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#working_shift"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Airline_Alitalia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Airline_EgyptAir"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Airline_TurkishAirlines"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Airport_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Airport_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Airport_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Customer_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Customer_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Customer_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Customer_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Customer_5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Employee_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Employee_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Employee_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Employee_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Employee_5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Employee_6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Flight_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Flight_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Flight_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gate_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gate_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gate_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gate_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gate_5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gate_6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Plane_A320"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Plane_A380"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Plane_Boeing737"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Plane_Boeing777"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Termial_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Terminal_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Terminal_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Terminal_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ticket_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ticket_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ticket_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ticket_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ticket_5"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Airline"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#goon"/>
+            <Class IRI="#Flight"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Airline"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#owns"/>
+            <Class IRI="#Plane"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Airline"/>
+        <ObjectMaxCardinality cardinality="100">
+            <ObjectProperty IRI="#owns"/>
+            <Class IRI="#Plane"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Airport"/>
+        <ObjectMaxCardinality cardinality="5">
+            <ObjectProperty IRI="#consist_of"/>
+            <Class IRI="#Terminal"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Airport"/>
+        <ObjectMaxCardinality cardinality="300">
+            <ObjectProperty IRI="#work_for"/>
+            <Class IRI="#Employee"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Customer"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Customer"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#buys"/>
+            <Class IRI="#Ticket"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Employee"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Employee"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#work_for"/>
+            <Class IRI="#Airport"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Flight"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#arrival_gate"/>
+            <Class IRI="#Airline"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Flight"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#departing_gate"/>
+            <Class IRI="#Gate"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Flight"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#goon"/>
+            <Class IRI="#Plane"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Flight"/>
+        <ObjectMaxCardinality cardinality="240">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Ticket"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gate"/>
+        <ObjectMinCardinality cardinality="5">
+            <ObjectProperty IRI="#arrival_gate"/>
+            <Class IRI="#Flight"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gate"/>
+        <ObjectMinCardinality cardinality="5">
+            <ObjectProperty IRI="#departing_gate"/>
+            <Class IRI="#Flight"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gate"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#contains"/>
+            <Class IRI="#Terminal"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plane"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#goon"/>
+            <Class IRI="#Flight"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plane"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#owns"/>
+            <Class IRI="#Airline"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Terminal"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#consist_of"/>
+            <Class IRI="#Airport"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Terminal"/>
+        <ObjectMaxCardinality cardinality="52">
+            <ObjectProperty IRI="#contains"/>
+            <Class IRI="#Gate"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ticket"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#buys"/>
+            <Class IRI="#Customer"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ticket"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Flight"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Airline"/>
+        <NamedIndividual IRI="#Airline_Alitalia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Airline"/>
+        <NamedIndividual IRI="#Airline_EgyptAir"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Airline"/>
+        <NamedIndividual IRI="#Airline_TurkishAirlines"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Airport"/>
+        <NamedIndividual IRI="#Airport_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Airport"/>
+        <NamedIndividual IRI="#Airport_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Airport"/>
+        <NamedIndividual IRI="#Airport_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customer"/>
+        <NamedIndividual IRI="#Customer_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customer"/>
+        <NamedIndividual IRI="#Customer_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customer"/>
+        <NamedIndividual IRI="#Customer_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customer"/>
+        <NamedIndividual IRI="#Customer_4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customer"/>
+        <NamedIndividual IRI="#Customer_5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Employee"/>
+        <NamedIndividual IRI="#Employee_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Employee"/>
+        <NamedIndividual IRI="#Employee_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Employee"/>
+        <NamedIndividual IRI="#Employee_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Employee"/>
+        <NamedIndividual IRI="#Employee_4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Employee"/>
+        <NamedIndividual IRI="#Employee_5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Employee"/>
+        <NamedIndividual IRI="#Employee_6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Flight"/>
+        <NamedIndividual IRI="#Flight_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Flight"/>
+        <NamedIndividual IRI="#Flight_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Flight"/>
+        <NamedIndividual IRI="#Flight_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gate"/>
+        <NamedIndividual IRI="#Gate_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gate"/>
+        <NamedIndividual IRI="#Gate_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gate"/>
+        <NamedIndividual IRI="#Gate_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gate"/>
+        <NamedIndividual IRI="#Gate_4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gate"/>
+        <NamedIndividual IRI="#Gate_5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gate"/>
+        <NamedIndividual IRI="#Gate_6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Plane"/>
+        <NamedIndividual IRI="#Plane_A320"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Plane"/>
+        <NamedIndividual IRI="#Plane_A380"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Plane"/>
+        <NamedIndividual IRI="#Plane_Boeing737"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Plane"/>
+        <NamedIndividual IRI="#Plane_Boeing777"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Terminal"/>
+        <NamedIndividual IRI="#Termial_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Terminal"/>
+        <NamedIndividual IRI="#Terminal_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Terminal"/>
+        <NamedIndividual IRI="#Terminal_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Terminal"/>
+        <NamedIndividual IRI="#Terminal_4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ticket"/>
+        <NamedIndividual IRI="#Ticket_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ticket"/>
+        <NamedIndividual IRI="#Ticket_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ticket"/>
+        <NamedIndividual IRI="#Ticket_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ticket"/>
+        <NamedIndividual IRI="#Ticket_4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ticket"/>
+        <NamedIndividual IRI="#Ticket_5"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#owns"/>
+        <NamedIndividual IRI="#Airline_Alitalia"/>
+        <NamedIndividual IRI="#Plane_A320"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#owns"/>
+        <NamedIndividual IRI="#Airline_EgyptAir"/>
+        <NamedIndividual IRI="#Plane_A380"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#owns"/>
+        <NamedIndividual IRI="#Airline_EgyptAir"/>
+        <NamedIndividual IRI="#Plane_Boeing737"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#owns"/>
+        <NamedIndividual IRI="#Airline_TurkishAirlines"/>
+        <NamedIndividual IRI="#Plane_Boeing777"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#consist_of"/>
+        <NamedIndividual IRI="#Airport_1"/>
+        <NamedIndividual IRI="#Termial_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#consist_of"/>
+        <NamedIndividual IRI="#Airport_1"/>
+        <NamedIndividual IRI="#Terminal_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#consist_of"/>
+        <NamedIndividual IRI="#Airport_2"/>
+        <NamedIndividual IRI="#Terminal_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#consist_of"/>
+        <NamedIndividual IRI="#Airport_3"/>
+        <NamedIndividual IRI="#Terminal_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#buys"/>
+        <NamedIndividual IRI="#Customer_1"/>
+        <NamedIndividual IRI="#Ticket_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#buys"/>
+        <NamedIndividual IRI="#Customer_2"/>
+        <NamedIndividual IRI="#Ticket_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#buys"/>
+        <NamedIndividual IRI="#Customer_3"/>
+        <NamedIndividual IRI="#Ticket_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#buys"/>
+        <NamedIndividual IRI="#Customer_4"/>
+        <NamedIndividual IRI="#Ticket_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#buys"/>
+        <NamedIndividual IRI="#Customer_5"/>
+        <NamedIndividual IRI="#Ticket_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#work_for"/>
+        <NamedIndividual IRI="#Employee_1"/>
+        <NamedIndividual IRI="#Airport_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#work_for"/>
+        <NamedIndividual IRI="#Employee_2"/>
+        <NamedIndividual IRI="#Airport_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#work_for"/>
+        <NamedIndividual IRI="#Employee_3"/>
+        <NamedIndividual IRI="#Airport_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#work_for"/>
+        <NamedIndividual IRI="#Employee_4"/>
+        <NamedIndividual IRI="#Airport_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#work_for"/>
+        <NamedIndividual IRI="#Employee_5"/>
+        <NamedIndividual IRI="#Airport_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#work_for"/>
+        <NamedIndividual IRI="#Employee_6"/>
+        <NamedIndividual IRI="#Airport_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#arrival_gate"/>
+        <NamedIndividual IRI="#Flight_1"/>
+        <NamedIndividual IRI="#Gate_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has"/>
+        <NamedIndividual IRI="#Flight_1"/>
+        <NamedIndividual IRI="#Ticket_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has"/>
+        <NamedIndividual IRI="#Flight_1"/>
+        <NamedIndividual IRI="#Ticket_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#arrival_gate"/>
+        <NamedIndividual IRI="#Flight_2"/>
+        <NamedIndividual IRI="#Gate_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has"/>
+        <NamedIndividual IRI="#Flight_2"/>
+        <NamedIndividual IRI="#Ticket_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#arrival_gate"/>
+        <NamedIndividual IRI="#Flight_3"/>
+        <NamedIndividual IRI="#Gate_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has"/>
+        <NamedIndividual IRI="#Flight_3"/>
+        <NamedIndividual IRI="#Ticket_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has"/>
+        <NamedIndividual IRI="#Flight_3"/>
+        <NamedIndividual IRI="#Ticket_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#departing_gate"/>
+        <NamedIndividual IRI="#Gate_4"/>
+        <NamedIndividual IRI="#Flight_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#departing_gate"/>
+        <NamedIndividual IRI="#Gate_5"/>
+        <NamedIndividual IRI="#Flight_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#departing_gate"/>
+        <NamedIndividual IRI="#Gate_6"/>
+        <NamedIndividual IRI="#Flight_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#goon"/>
+        <NamedIndividual IRI="#Plane_A320"/>
+        <NamedIndividual IRI="#Flight_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#Termial_1"/>
+        <NamedIndividual IRI="#Gate_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#Termial_1"/>
+        <NamedIndividual IRI="#Gate_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#Terminal_2"/>
+        <NamedIndividual IRI="#Gate_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#Terminal_2"/>
+        <NamedIndividual IRI="#Gate_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#Terminal_3"/>
+        <NamedIndividual IRI="#Gate_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#Terminal_3"/>
+        <NamedIndividual IRI="#Gate_6"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airline_id"/>
+        <NamedIndividual IRI="#Airline_Alitalia"/>
+        <Literal>A02</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airline_name"/>
+        <NamedIndividual IRI="#Airline_Alitalia"/>
+        <Literal>Alitalia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#owner_country"/>
+        <NamedIndividual IRI="#Airline_Alitalia"/>
+        <Literal>Italy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airline_id"/>
+        <NamedIndividual IRI="#Airline_EgyptAir"/>
+        <Literal>A00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airline_name"/>
+        <NamedIndividual IRI="#Airline_EgyptAir"/>
+        <Literal>EgyptAir</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#owner_country"/>
+        <NamedIndividual IRI="#Airline_EgyptAir"/>
+        <Literal>Egypt</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airline_id"/>
+        <NamedIndividual IRI="#Airline_TurkishAirlines"/>
+        <Literal>A01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airline_name"/>
+        <NamedIndividual IRI="#Airline_TurkishAirlines"/>
+        <Literal>Turkish Airlines</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#owner_country"/>
+        <NamedIndividual IRI="#Airline_TurkishAirlines"/>
+        <Literal>Turkey</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#address"/>
+        <NamedIndividual IRI="#Airport_1"/>
+        <Literal>Oruba Road, Heliopolis, Cairo, Egypt</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airport_name"/>
+        <NamedIndividual IRI="#Airport_1"/>
+        <Literal>Cairo International Airport</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#city"/>
+        <NamedIndividual IRI="#Airport_1"/>
+        <Literal>Cairo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#address"/>
+        <NamedIndividual IRI="#Airport_2"/>
+        <Literal>1 World Way, Los Angeles, CA 90045, United States</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airport_name"/>
+        <NamedIndividual IRI="#Airport_2"/>
+        <Literal>Los Angeles International Airport</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#city"/>
+        <NamedIndividual IRI="#Airport_2"/>
+        <Literal>Los Angeles</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#address"/>
+        <NamedIndividual IRI="#Airport_3"/>
+        <Literal>Via dell&apos;Aeroporto di Fiumicino, 00054 Fiumicino RM, Italy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airport_name"/>
+        <NamedIndividual IRI="#Airport_3"/>
+        <Literal>Fiumicino Airport</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#city"/>
+        <NamedIndividual IRI="#Airport_3"/>
+        <Literal>Rome</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Birthdate"/>
+        <NamedIndividual IRI="#Customer_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2010-10-26T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#email"/>
+        <NamedIndividual IRI="#Customer_1"/>
+        <Literal>r.kamal@ontologies.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gender"/>
+        <NamedIndividual IRI="#Customer_1"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Customer_1"/>
+        <Literal>Ragui Kamal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#personal_id"/>
+        <NamedIndividual IRI="#Customer_1"/>
+        <Literal>10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Birthdate"/>
+        <NamedIndividual IRI="#Customer_2"/>
+        <Literal>2003-04-17T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#email"/>
+        <NamedIndividual IRI="#Customer_2"/>
+        <Literal>s.samir@gmail.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gender"/>
+        <NamedIndividual IRI="#Customer_2"/>
+        <Literal>Female</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Customer_2"/>
+        <Literal>Sandy Samir</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#personal_id"/>
+        <NamedIndividual IRI="#Customer_2"/>
+        <Literal>11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Birthdate"/>
+        <NamedIndividual IRI="#Customer_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2001-11-12T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#email"/>
+        <NamedIndividual IRI="#Customer_3"/>
+        <Literal>customer@ontol.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gender"/>
+        <NamedIndividual IRI="#Customer_3"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Customer_3"/>
+        <Literal>Kiko Cocka</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#personal_id"/>
+        <NamedIndividual IRI="#Customer_3"/>
+        <Literal>13</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Birthdate"/>
+        <NamedIndividual IRI="#Customer_4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1997-03-23T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#email"/>
+        <NamedIndividual IRI="#Customer_4"/>
+        <Literal>y.ahmed@outlook.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gender"/>
+        <NamedIndividual IRI="#Customer_4"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Customer_4"/>
+        <Literal>Youssef Ahmad</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#personal_id"/>
+        <NamedIndividual IRI="#Customer_4"/>
+        <Literal>14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Birthdate"/>
+        <NamedIndividual IRI="#Customer_5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1990-12-25T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#email"/>
+        <NamedIndividual IRI="#Customer_5"/>
+        <Literal>kareem.omar@gmail.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gender"/>
+        <NamedIndividual IRI="#Customer_5"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Customer_5"/>
+        <Literal>Kareem Omar</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#personal_id"/>
+        <NamedIndividual IRI="#Customer_5"/>
+        <Literal>15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Birthdate"/>
+        <NamedIndividual IRI="#Employee_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2001-10-26T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gender"/>
+        <NamedIndividual IRI="#Employee_1"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Employee_1"/>
+        <Literal>Ali Mahmoud</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#personal_id"/>
+        <NamedIndividual IRI="#Employee_1"/>
+        <Literal>1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#responsibility"/>
+        <NamedIndividual IRI="#Employee_1"/>
+        <Literal>cleaner</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#salary"/>
+        <NamedIndividual IRI="#Employee_1"/>
+        <Literal>500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#working_shift"/>
+        <NamedIndividual IRI="#Employee_1"/>
+        <Literal>am</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Birthdate"/>
+        <NamedIndividual IRI="#Employee_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1999-02-19T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gender"/>
+        <NamedIndividual IRI="#Employee_2"/>
+        <Literal>Female</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Employee_2"/>
+        <Literal>Hayam Hussein</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#personal_id"/>
+        <NamedIndividual IRI="#Employee_2"/>
+        <Literal>2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#responsibility"/>
+        <NamedIndividual IRI="#Employee_2"/>
+        <Literal>pilot</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#salary"/>
+        <NamedIndividual IRI="#Employee_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">350.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#working_shift"/>
+        <NamedIndividual IRI="#Employee_2"/>
+        <Literal>pm</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Birthdate"/>
+        <NamedIndividual IRI="#Employee_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1995-05-30T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gender"/>
+        <NamedIndividual IRI="#Employee_3"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Employee_3"/>
+        <Literal>Khaled Youssef</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#personal_id"/>
+        <NamedIndividual IRI="#Employee_3"/>
+        <Literal>3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#responsibility"/>
+        <NamedIndividual IRI="#Employee_3"/>
+        <Literal>fueler</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#salary"/>
+        <NamedIndividual IRI="#Employee_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">220.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#working_shift"/>
+        <NamedIndividual IRI="#Employee_3"/>
+        <Literal>am</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Birthdate"/>
+        <NamedIndividual IRI="#Employee_4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1990-10-26T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gender"/>
+        <NamedIndividual IRI="#Employee_4"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Employee_4"/>
+        <Literal>Youssef Samuel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#personal_id"/>
+        <NamedIndividual IRI="#Employee_4"/>
+        <Literal>4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#responsibility"/>
+        <NamedIndividual IRI="#Employee_4"/>
+        <Literal>pilot</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#salary"/>
+        <NamedIndividual IRI="#Employee_4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">885.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#working_shift"/>
+        <NamedIndividual IRI="#Employee_4"/>
+        <Literal>pm</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Birthdate"/>
+        <NamedIndividual IRI="#Employee_5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2002-02-04T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gender"/>
+        <NamedIndividual IRI="#Employee_5"/>
+        <Literal>Female</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Employee_5"/>
+        <Literal>Rana Mostafa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#personal_id"/>
+        <NamedIndividual IRI="#Employee_5"/>
+        <Literal>5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#responsibility"/>
+        <NamedIndividual IRI="#Employee_5"/>
+        <Literal>crew</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#salary"/>
+        <NamedIndividual IRI="#Employee_5"/>
+        <Literal>400</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#working_shift"/>
+        <NamedIndividual IRI="#Employee_5"/>
+        <Literal>am</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Birthdate"/>
+        <NamedIndividual IRI="#Employee_6"/>
+        <Literal>1999-11-06T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gender"/>
+        <NamedIndividual IRI="#Employee_6"/>
+        <Literal>Female</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Employee_6"/>
+        <Literal>Nardine Yousry</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#personal_id"/>
+        <NamedIndividual IRI="#Employee_6"/>
+        <Literal>6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#responsibility"/>
+        <NamedIndividual IRI="#Employee_6"/>
+        <Literal>crew</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#salary"/>
+        <NamedIndividual IRI="#Employee_6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">1000.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#working_shift"/>
+        <NamedIndividual IRI="#Employee_6"/>
+        <Literal>pm</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#estimated_duration"/>
+        <NamedIndividual IRI="#Flight_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">120</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#flight_date"/>
+        <NamedIndividual IRI="#Flight_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2022-03-26T21:32:52</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#flight_number"/>
+        <NamedIndividual IRI="#Flight_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">22</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#estimated_duration"/>
+        <NamedIndividual IRI="#Flight_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#flight_date"/>
+        <NamedIndividual IRI="#Flight_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2021-10-26T21:32:52</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#flight_number"/>
+        <NamedIndividual IRI="#Flight_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#estimated_duration"/>
+        <NamedIndividual IRI="#Flight_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">300</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#flight_date"/>
+        <NamedIndividual IRI="#Flight_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2021-11-07T21:32:52</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#flight_number"/>
+        <NamedIndividual IRI="#Flight_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gate_number"/>
+        <NamedIndividual IRI="#Gate_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gate_number"/>
+        <NamedIndividual IRI="#Gate_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gate_number"/>
+        <NamedIndividual IRI="#Gate_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gate_number"/>
+        <NamedIndividual IRI="#Gate_4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gate_number"/>
+        <NamedIndividual IRI="#Gate_5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gate_number"/>
+        <NamedIndividual IRI="#Gate_6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#aircraft_engine"/>
+        <NamedIndividual IRI="#Plane_A320"/>
+        <Literal>Turbofan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#baggage_capaity"/>
+        <NamedIndividual IRI="#Plane_A320"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">8700.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#max_speed"/>
+        <NamedIndividual IRI="#Plane_A320"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">550.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#number_of_seats"/>
+        <NamedIndividual IRI="#Plane_A320"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">440.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#aircraft_engine"/>
+        <NamedIndividual IRI="#Plane_A380"/>
+        <Literal>Turboprop</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#baggage_capaity"/>
+        <NamedIndividual IRI="#Plane_A380"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">5000.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#max_speed"/>
+        <NamedIndividual IRI="#Plane_A380"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">929.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#number_of_seats"/>
+        <NamedIndividual IRI="#Plane_A380"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">840</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#aircraft_engine"/>
+        <NamedIndividual IRI="#Plane_Boeing737"/>
+        <Literal>Turboprop</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#baggage_capaity"/>
+        <NamedIndividual IRI="#Plane_Boeing737"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">755.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#max_speed"/>
+        <NamedIndividual IRI="#Plane_Boeing737"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">670.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#number_of_seats"/>
+        <NamedIndividual IRI="#Plane_Boeing737"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#aircraft_engine"/>
+        <NamedIndividual IRI="#Plane_Boeing777"/>
+        <Literal>Turboshaft</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#arriving_or_departing"/>
+        <NamedIndividual IRI="#Plane_Boeing777"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">9000.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#max_speed"/>
+        <NamedIndividual IRI="#Plane_Boeing777"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">855.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#number_of_seats"/>
+        <NamedIndividual IRI="#Plane_Boeing777"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">900</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#arriving_or_departing"/>
+        <NamedIndividual IRI="#Termial_1"/>
+        <Literal>Arriving</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#facilities"/>
+        <NamedIndividual IRI="#Termial_1"/>
+        <Literal>DutyFree</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#facilities"/>
+        <NamedIndividual IRI="#Termial_1"/>
+        <Literal>WC</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#international_or_national"/>
+        <NamedIndividual IRI="#Termial_1"/>
+        <Literal>International</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#terminal_number"/>
+        <NamedIndividual IRI="#Termial_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#arriving_or_departing"/>
+        <NamedIndividual IRI="#Terminal_2"/>
+        <Literal>Departing</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#facilities"/>
+        <NamedIndividual IRI="#Terminal_2"/>
+        <Literal>Foodcourt</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#facilities"/>
+        <NamedIndividual IRI="#Terminal_2"/>
+        <Literal>WC</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#international_or_national"/>
+        <NamedIndividual IRI="#Terminal_2"/>
+        <Literal>National</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#terminal_number"/>
+        <NamedIndividual IRI="#Terminal_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#arriving_or_departing"/>
+        <NamedIndividual IRI="#Terminal_3"/>
+        <Literal>Arriving</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#facilities"/>
+        <NamedIndividual IRI="#Terminal_3"/>
+        <Literal>DutyFree</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#facilities"/>
+        <NamedIndividual IRI="#Terminal_3"/>
+        <Literal>WC</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#international_or_national"/>
+        <NamedIndividual IRI="#Terminal_3"/>
+        <Literal>International</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#terminal_number"/>
+        <NamedIndividual IRI="#Terminal_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#arriving_or_departing"/>
+        <NamedIndividual IRI="#Terminal_4"/>
+        <Literal>Arriving</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#facilities"/>
+        <NamedIndividual IRI="#Terminal_4"/>
+        <Literal>DutyFree</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#international_or_national"/>
+        <NamedIndividual IRI="#Terminal_4"/>
+        <Literal>International</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#terminal_number"/>
+        <NamedIndividual IRI="#Terminal_4"/>
+        <Literal>4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#buy_date"/>
+        <NamedIndividual IRI="#Ticket_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-21T21:32:52</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#class"/>
+        <NamedIndividual IRI="#Ticket_1"/>
+        <Literal>Business</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#price"/>
+        <NamedIndividual IRI="#Ticket_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">220.25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#seat_number"/>
+        <NamedIndividual IRI="#Ticket_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#buy_date"/>
+        <NamedIndividual IRI="#Ticket_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2020-10-01T11:32:52</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#price"/>
+        <NamedIndividual IRI="#Ticket_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">300.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#price"/>
+        <NamedIndividual IRI="#Ticket_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">880.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#seat_number"/>
+        <NamedIndividual IRI="#Ticket_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#buy_date"/>
+        <NamedIndividual IRI="#Ticket_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2020-07-04T14:30:10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#class"/>
+        <NamedIndividual IRI="#Ticket_3"/>
+        <Literal>Economy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#price"/>
+        <NamedIndividual IRI="#Ticket_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">225.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#seat_number"/>
+        <NamedIndividual IRI="#Ticket_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#buy_date"/>
+        <NamedIndividual IRI="#Ticket_4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2018-11-04T00:21:07</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#class"/>
+        <NamedIndividual IRI="#Ticket_4"/>
+        <Literal>First class</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#price"/>
+        <NamedIndividual IRI="#Ticket_4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">224.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#seat_number"/>
+        <NamedIndividual IRI="#Ticket_4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#buy_date"/>
+        <NamedIndividual IRI="#Ticket_5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2019-01-09T23:23:23</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#class"/>
+        <NamedIndividual IRI="#Ticket_5"/>
+        <Literal>Economy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#price"/>
+        <NamedIndividual IRI="#Ticket_5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">599.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#seat_number"/>
+        <NamedIndividual IRI="#Ticket_5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">12</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#arrival_gate"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#buys"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#consist_of"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#contains"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#departing_gate"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#goon"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#owns"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#work_for"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#arrival_gate"/>
+        <Class IRI="#Flight"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#buys"/>
+        <Class IRI="#Customer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#consist_of"/>
+        <Class IRI="#Airport"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#contains"/>
+        <Class IRI="#Terminal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#departing_gate"/>
+        <Class IRI="#Gate"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#goon"/>
+        <Class IRI="#Plane"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has"/>
+        <Class IRI="#Flight"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#owns"/>
+        <Class IRI="#Airline"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#work_for"/>
+        <Class IRI="#Employee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#arrival_gate"/>
+        <Class IRI="#Gate"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#buys"/>
+        <Class IRI="#Ticket"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#consist_of"/>
+        <Class IRI="#Terminal"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#contains"/>
+        <Class IRI="#Gate"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#departing_gate"/>
+        <Class IRI="#Flight"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#goon"/>
+        <Class IRI="#Flight"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has"/>
+        <Class IRI="#Ticket"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#owns"/>
+        <Class IRI="#Plane"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#work_for"/>
+        <Class IRI="#Airport"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Birthdate"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#address"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#aircraft_engine"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#airline_id"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#airline_name"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#airport_name"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#arriving_or_departing"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#baggage_capaity"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#buy_date"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#city"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#class"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#email"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#estimated_duration"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#facilities"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#flight_date"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#flight_number"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#gate_number"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#gender"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#international_or_national"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#max_speed"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#name"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#number_of_seats"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#owner_country"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#personal_id"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#plane_name"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#price"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#responsibility"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#salary"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#seat_number"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#terminal_number"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#working_shift"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Birthdate"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#address"/>
+        <Class IRI="#Airport"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#aircraft_engine"/>
+        <Class IRI="#Plane"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#aircraft_engine"/>
+        <ObjectUnionOf>
+            <DataHasValue>
+                <DataProperty IRI="#aircraft_engine"/>
+                <Literal>Turbofan</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#aircraft_engine"/>
+                <Literal>Turbojet</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#aircraft_engine"/>
+                <Literal>Turboprop</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#aircraft_engine"/>
+                <Literal>Turboshaft</Literal>
+            </DataHasValue>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#airline_id"/>
+        <Class IRI="#Airline"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#airline_name"/>
+        <Class IRI="#Airline"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#airport_name"/>
+        <Class IRI="#Airport"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#arriving_or_departing"/>
+        <Class IRI="#Terminal"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#arriving_or_departing"/>
+        <ObjectUnionOf>
+            <DataHasValue>
+                <DataProperty IRI="#arriving_or_departing"/>
+                <Literal>Arriving</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#arriving_or_departing"/>
+                <Literal>Departing</Literal>
+            </DataHasValue>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#baggage_capaity"/>
+        <Class IRI="#Plane"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#baggage_capaity"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#baggage_capaity"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:double"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.0</Literal>
+                </FacetRestriction>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">10000.0</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#buy_date"/>
+        <Class IRI="#Ticket"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#city"/>
+        <Class IRI="#Airport"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#class"/>
+        <Class IRI="#Ticket"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#class"/>
+        <ObjectUnionOf>
+            <DataHasValue>
+                <DataProperty IRI="#class"/>
+                <Literal>Business</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#class"/>
+                <Literal>Economy</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#class"/>
+                <Literal>First class</Literal>
+            </DataHasValue>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#email"/>
+        <Class IRI="#Customer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#email"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#email"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#estimated_duration"/>
+        <Class IRI="#Flight"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#estimated_duration"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#estimated_duration"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:int"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">0</Literal>
+                </FacetRestriction>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1130</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#facilities"/>
+        <Class IRI="#Terminal"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#facilities"/>
+        <ObjectUnionOf>
+            <DataHasValue>
+                <DataProperty IRI="#facilities"/>
+                <Literal>Dutyfree</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#facilities"/>
+                <Literal>Foodcourt</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#facilities"/>
+                <Literal>Shopping</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#facilities"/>
+                <Literal>WC</Literal>
+            </DataHasValue>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#flight_date"/>
+        <Class IRI="#Flight"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#flight_number"/>
+        <Class IRI="#Flight"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#gate_number"/>
+        <Class IRI="#Gate"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#gate_number"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#gate_number"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:integer"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+                </FacetRestriction>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">52</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#gender"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#gender"/>
+        <ObjectUnionOf>
+            <DataHasValue>
+                <DataProperty IRI="#gender"/>
+                <Literal>Female</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#gender"/>
+                <Literal>Male</Literal>
+            </DataHasValue>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#international_or_national"/>
+        <Class IRI="#Terminal"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#international_or_national"/>
+        <ObjectUnionOf>
+            <DataHasValue>
+                <DataProperty IRI="#international_or_national"/>
+                <Literal>International</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#international_or_national"/>
+                <Literal>National</Literal>
+            </DataHasValue>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#max_speed"/>
+        <Class IRI="#Plane"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#max_speed"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#max_speed"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:float"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.0</Literal>
+                </FacetRestriction>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1046.07</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#number_of_seats"/>
+        <Class IRI="#Plane"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#number_of_seats"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#number_of_seats"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:float"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.0</Literal>
+                </FacetRestriction>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1087.0</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#owner_country"/>
+        <Class IRI="#Airline"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#personal_id"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#plane_name"/>
+        <Class IRI="#Plane"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#price"/>
+        <Class IRI="#Ticket"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#price"/>
+        <DataMinCardinality cardinality="0">
+            <DataProperty IRI="#price"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataMinCardinality>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#responsibility"/>
+        <Class IRI="#Employee"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#responsibility"/>
+        <ObjectUnionOf>
+            <DataHasValue>
+                <DataProperty IRI="#responsibility"/>
+                <Literal>cleaner</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#responsibility"/>
+                <Literal>crew</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#responsibility"/>
+                <Literal>fueler</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#responsibility"/>
+                <Literal>mechanic engineer</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#responsibility"/>
+                <Literal>pilot</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#responsibility"/>
+                <Literal>reservation</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#responsibility"/>
+                <Literal>security</Literal>
+            </DataHasValue>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#salary"/>
+        <Class IRI="#Employee"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#salary"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#salary"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:double"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.0</Literal>
+                </FacetRestriction>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">30000.0</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#seat_number"/>
+        <Class IRI="#Ticket"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#terminal_number"/>
+        <Class IRI="#Terminal"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#terminal_number"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#terminal_number"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:float"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.0</Literal>
+                </FacetRestriction>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">10.0</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#working_shift"/>
+        <Class IRI="#Employee"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#working_shift"/>
+        <ObjectUnionOf>
+            <DataHasValue>
+                <DataProperty IRI="#working_shift"/>
+                <Literal>am</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#working_shift"/>
+                <Literal>pm</Literal>
+            </DataHasValue>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <Class IRI="#Plane"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Birthdate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#address"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#aircraft_engine"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#airline_id"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#airline_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#airport_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#arriving_or_departing"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#baggage_capaity"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#buy_date"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#city"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#class"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#email"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#estimated_duration"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#facilities"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#flight_date"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#flight_number"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#gate_number"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#gender"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#international_or_national"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#max_speed"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#number_of_seats"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#owner_country"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#personal_id"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#plane_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#price"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#responsibility"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#salary"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#seat_number"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#terminal_number"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#working_shift"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
